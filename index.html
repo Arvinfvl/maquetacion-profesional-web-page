@@ -14,7 +14,10 @@
     <!-- ARVIN: 1. BARRA DE NAVEGACIÓN -->
     <header class="header">
         <nav class="navbar">
-            <a class="navbar__logo" href="#">Disney</a>
+
+            <a class="navbar__logo" href="#">
+                <img src="images/logo.png" alt="Disney">
+            </a>
 
             <ul class="navbar__menu">
                 <li><a href="#tienda">Shop</a></li>
@@ -25,8 +28,17 @@
 
             <div class="navbar__actions">
                 <a href="#">Log In</a>
-                <a href="#">Search</a>
+
+                <form class="navbar__search" action="#">
+                    <input
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Buscar"
+                    >
+                    <button type="submit" aria-label="Buscar">⌕</button>
+                </form>
             </div>
+
         </nav>
     </header>
 
