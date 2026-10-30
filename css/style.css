@@ -126,41 +126,66 @@ img {
     cursor: pointer;
 }
 
-/* =================================
-   2. BANNER - ARVIN
-================================= */
+/* 2. BANNER PRINCIPAL - ARVIN */
 
 .hero {
-    min-height: 420px;
+    min-height: 470px;
+    width: 100%;
     display: flex;
     align-items: center;
-    padding: 45px 8%;
-    background-color: #29251e;
-    color: white;
-    background-size: cover;
+    justify-content: flex-start;
+    padding: 50px 8%;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.05)
+        ),
+        url("../images/banner-background.png");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
 }
 
 .hero__content {
-    max-width: 390px;
+    max-width: 440px;
 }
 
 .hero__eyebrow {
-    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
+    margin-bottom: 15px;
 }
 
 .hero h1 {
     font-family: Georgia, serif;
-    font-size: 48px;
-    margin-bottom: 15px;
+    font-size: 58px;
+    margin-bottom: 18px;
 }
 
 .hero__content p {
-    margin-bottom: 20px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0877bd;
+    color: #ffffff;
 }
 
 /* =================================
