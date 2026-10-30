@@ -359,92 +359,186 @@ img {
 /* =================================
    6. PARQUES DISNEY - TROCHEZ
 ================================= */
+/* 6. PARQUES DISNEY - TROCHEZ */
 
 .parks {
-    padding: 35px 5%;
-    background-color: #f5f5f5;
+    padding: 55px 6%;
+    background-color: #ffffff;
 }
 
 .parks__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
-/* =================================
-   7. PROMOCIÓN FINAL - TROCHEZ
-================================= */
+.parks__card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.parks__card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.parks__content {
+    padding: 22px;
+    text-align: center;
+}
+
+.parks__content h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.parks__content p {
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.parks__content a {
+    color: #0877bd;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* 7. PROMOCIÓN FINAL - TROCHEZ */
 
 .promotion {
-    min-height: 250px;
-    padding: 35px 5%;
-    background-color: #dff7f5;
+    min-height: 330px;
+    padding: 55px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.48),
+            rgba(0, 0, 0, 0.48)
+        ),
+        url("../images/more-background.jpeg");
+    background-position: center;
+    background-size: cover;
 }
 
-/* =================================
-   8. PIE DE PÁGINA - TROCHEZ
-================================= */
+.promotion__content {
+    max-width: 600px;
+}
+
+.promotion__content > p:first-child {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.promotion__content h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.promotion__content p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.promotion__content a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #222222;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* 8. PIE DE PÁGINA - TROCHEZ */
 
 .footer {
-    padding: 30px 15px;
+    padding: 35px 6%;
+    background-color: #111111;
+    color: #ffffff;
     text-align: center;
-    background-color: white;
-    color: #555555;
-    font-size: 12px;
-    line-height: 2;
 }
 
 .footer__logo {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-/* =================================
-   DISEÑO RESPONSIVO
-================================= */
+.footer__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 22px;
+}
 
-/* ADAPTACIÓN RESPONSIVE DE LAS SECCIONES DE ARVIN */
+.footer__links a {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer__links a:hover {
+    color: #70bfff;
+}
+
+.footer p {
+    color: #cccccc;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+/* RESPONSIVE - SECCIONES DE TROCHEZ */
+
 @media (max-width: 900px) {
-    .shop__grid {
+    .explore__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero {
-        min-height: 380px;
+    .releases__grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .hero h1 {
-        font-size: 45px;
+    .parks__grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar__menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .navbar__actions {
-        justify-content: center;
-    }
-
-    .shop__grid {
+    .explore__grid {
         grid-template-columns: 1fr;
     }
 
-    .hero {
-        min-height: 350px;
-        padding: 35px 7%;
-        background-position: center;
+    .releases__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero h1 {
-        font-size: 38px;
+    .release__card img {
+        height: 210px;
+    }
+
+    .parks__card img {
+        height: 210px;
+    }
+
+    .promotion__content h2 {
+        font-size: 27px;
     }
 }
